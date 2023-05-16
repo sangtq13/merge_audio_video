@@ -5,8 +5,6 @@ from natsort import natsorted
 L = []
 
 for root, dirs, files in os.walk("./"):
-
-    #files.sort()
     files = natsorted(files)
     for file in files:
         if os.path.splitext(file)[1] == '.mp4':
